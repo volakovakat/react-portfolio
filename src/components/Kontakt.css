@@ -1,0 +1,18 @@
+.contactMeImage {
+    display: flex;
+    max-height: 400px;
+    width: auto;
+    margin-top: 5em;
+    border-radius: 5px;
+    box-shadow: 4px 4px 13px 0 rgb(0 0 0/10%);
+}
+
+.contactPage {
+    min-height: calc(100vh - 76px - 185px);
+}
+
+@media screen and (max-width: 767px) {
+    .contactMeImage {
+        display: none;
+    }
+}
