@@ -5,25 +5,32 @@ import "./Kontakt.css";
 
 function Kontakt() {
     const [status, setStatus] = React.useState("Odeslat");
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        setStatus("Odesílám...");
-        const {name, email, message} = e.target.elements;
-        let details = {
-            name: name.value,
-            email: email.value,
-            message: message.value,
-        };
-        let response = await fetch("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(details),
+        window.grecaptcha.ready(function() {
+            window.grecaptcha.execute("6LeXo-AbAAAAAGM39paoSRJFodgQGJ3ZmVkVWgiq", {action: 'submit'}).then(async function(token) {
+                setStatus("Odesílám...");
+                const {name, email, message} = e.target.elements;
+                let details = {
+                    token: token,
+                    action: "submit",
+                    name: name.value,
+                    email: email.value,
+                    message: message.value,
+                };
+                let response = await fetch("https://stenlik.eu:25000/contact", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json;charset=utf-8",
+                    },
+                    body: JSON.stringify(details),
+                });
+                setStatus("Odesláno");
+                let result = await response.json();
+                e.target.reset();
+            });
         });
-        setStatus("Odesláno");
-        let result = await response.json();
-        e.target.reset();
+
     };
 
     return (
@@ -59,8 +66,6 @@ function Kontakt() {
             </Container>
             <Footer/>
         </>
-
-
     );
 }
 
