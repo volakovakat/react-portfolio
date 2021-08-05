@@ -242,7 +242,7 @@ function Omne() {
                                 <Button className="button-left" variant="info" href="https://katerinavolakova.cz">Zpět
                                     na úvod</Button>
                                 <Button className="button-right" variant="warning"
-                                        href="https://github.com/volakovakat/Cviceni-Boty" target="blank">Zdrojový
+                                        href="https://github.com/volakovakat/react-portfolio" target="blank">Zdrojový
                                     kód</Button>
                             </div>
 
