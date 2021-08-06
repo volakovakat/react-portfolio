@@ -55,6 +55,10 @@ function Kontakt() {
                             <Form.Group as={Row} className="mb-3">
                                 <Col sm={{span: 12}}>
                                     <Button type="submit" variant="info" size="lg" block>{status}</Button>
+                                    <p className="recaptchaInfo">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy"> Privacy Policy </a> and
+                                        <a href="https://policies.google.com/terms"> Terms of Service </a> apply.
+                                    </p>
+
                                 </Col>
                             </Form.Group>
                         </Form>

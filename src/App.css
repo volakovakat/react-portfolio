@@ -35,17 +35,17 @@ h1 {
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .logoName {
         display: none;
     }
+
 }
 
-@media (min-width: 992px) {
-    .menuCustom {
-        position: sticky;
-        top: 0;
-        background-color: white;
+@media (min-width: 768px) and (max-width: 991px) {
+    .logoName {
+        font-size: 1.25rem;
     }
 }
+
 

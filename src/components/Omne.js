@@ -35,10 +35,11 @@ function Omne() {
                         </div>
 
 
-                        <p className="text-justify">Ahoj, jsem Kačka, juniorní programátorka z Prahy. Konkrétně se
-                            zajímám o front end. Rozumím si s HTML, CSS, JavaScriptem a momentálně objevuji kouzlo
-                            Reactu. Zajímám se i o grafiku a UX design.<br/>
-                            Kromě programování jezdím po světě, čtu knížky a chodím často do přírody.
+                        <p className="text-justify">Ahoj, jmenuju se Kačka a jsem front-end nadšenec. Ovládám HTML, CSS
+                            a Wordpress na pokročilé úrovni. JavaScript a React na úrovni juniora. Zkušenosti sbírám zatím
+                            na soukromých projektech nebo pomáhám neziskovkám. Zajímám se i o grafiku a UX design.<br/>
+                            Pokud zrovna nesedím u pracovního stolu, tak mě najdete v kavárně nebo v přírodě na
+                            procházce. Nejradši ale cestuju po světe s napínavou knížkou v batohu.
                         </p>
                         <p>
                             <a className="btn btn-info" href="#zkusenosti">Zkušenosti</a>
@@ -115,7 +116,8 @@ function Omne() {
                         <h4>srpen 2021 - současnost</h4>
                         <p className="text-justify">
                             Nově jsem zapojená do projektu <a href="https://www.jehlomat.cz/"
-                                                              target="_blank">Jehlomat</a> jako Junior React Developer.
+                                                              target="_blank">Jehlomat</a> jako Junior Front End
+                            Developer.
                             Hlavním cílem projektu je zapojení veřejnosti při hlášení nálezů injekčního materiálu pomoci
                             mobilní aplikace či webového rozhraní.
                         </p>
@@ -195,7 +197,7 @@ function Omne() {
                             </div>
 
                             <Card.Text>
-                                Stylování e-shop karty. Na úlohách tohoto typu průběžně cvičím CSS.
+                                Příklad stylování e-shop karty. Na úlohách tohoto typu průběžně cvičím CSS.
                             </Card.Text>
                             <div>
                                 <Button className="button-left" variant="info"

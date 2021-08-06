@@ -2,7 +2,7 @@
     background: linear-gradient( #ffffff 5%, #d0d0d0 59%);
     padding: 1.5em 0 0 0;
     text-align: center;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-self: flex-end;
     bottom: 0;

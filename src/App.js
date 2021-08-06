@@ -29,7 +29,7 @@ function App() {
             <Router>
                 <Container id="top-of-the-page" fluid>
                     <Navbar collapseOnSelect expand="lg" className="menuCustom">
-                        <Navbar.Brand href="#home">
+                        <Navbar.Brand>
                             <img
                                 src="images/logo.svg"
                                 width="50"

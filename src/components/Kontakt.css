@@ -11,6 +11,10 @@
     min-height: calc(100vh - 76px - 185px);
 }
 
+.recaptchaInfo {
+    font-size: 10.5px;
+}
+
 @media screen and (max-width: 767px) {
     .contactMeImage {
         display: none;
